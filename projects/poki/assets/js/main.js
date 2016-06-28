@@ -6,7 +6,7 @@ var pokiSwiperController = {
 		var template = _.template($('#swiper-slide').html());
 	
 		// loading locally because of CORS restrictions
-		$.getJSON('/games.json', function(data) {
+		$.getJSON('../../games.json', function(data) {
 			$('.swiper-wrapper').empty();
 			$.each(data, function(index, game) {
 
