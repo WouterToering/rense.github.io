@@ -1,0 +1,145 @@
+@import "colors"
+
+.ribbon
+  position: absolute
+  width: 100%
+  top: 145px
+  left: 0
+
+.ribbon:before,
+.ribbon i:before
+  content: ''
+  position: absolute
+  bottom: -23px
+  border: 24px solid $ribbon-red
+
+.ribbon.gold:before,
+.ribbon.gold i:before
+  border: 24px solid $ribbon-gold
+
+.ribbon:before,
+.ribbon.gold:before
+  left: -54px
+  border-left-color: transparent
+  -webkit-transform: rotate(-16deg)
+    -moz-transform: rotate(-16deg)
+      -ms-transform: rotate(-16deg)
+        -o-transform: rotate(-16deg)
+          transform: rotate(-16deg)
+
+.oldie .ribbon:before
+  left: -48px
+
+.ribbon i:before,
+.ribbon.gold i:before
+  right: -54px
+  border-right-color: transparent
+  -webkit-transform: rotate(16deg)
+    -moz-transform: rotate(16deg)
+      -ms-transform: rotate(16deg)
+        -o-transform: rotate(16deg)
+          transform: rotate(16deg)
+  z-index: -1
+
+.oldie .ribbon i:before
+  right: -48px
+
+.ribbon i:after,
+.ribbon u:after
+  content: ''
+  position: absolute
+  border-style: solid
+  bottom: -16px
+  z-index: 0
+
+.ribbon i:after
+  right: -16px
+  border-color: transparent transparent transparent $ribbon-red
+  border-width: 0 0 16px 16px
+
+.ribbon.gold i:after
+  border-color: transparent transparent transparent $ribbon-gold
+
+.ribbon u:after
+  left: 0
+  border-color: transparent $ribbon-red transparent transparent
+  border-width: 0 16px 16px 0
+
+.ribbon.gold u:after
+  border-color: transparent $ribbon-gold transparent transparent
+
+.ribbon u
+  display: block
+  position: relative
+  padding: 20px
+  background: $ribbon-red-light
+
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($ribbon-red-light), to($ribbon-red))
+  background-image: -webkit-linear-gradient($ribbon-red-light, $ribbon-red)
+  background-image: -moz-linear-gradient($ribbon-red-light, $ribbon-red)
+  background-image: -ms-linear-gradient($ribbon-red-light, $ribbon-red)
+  background-image: linear-gradient($ribbon-red-light, $ribbon-red)
+  -webkit-border-top-left-radius: 50% 16px
+    border-top-left-radius: 50% 16px
+  -webkit-border-top-right-radius: 50% 16px
+    border-top-right-radius: 50% 16px
+
+  text-align: center
+  text-decoration: none
+
+  a
+    position: relative
+    top: -7px
+    font-weight: 800
+    font-size: 18px
+    font-style: normal
+    text-decoration: none
+    letter-spacing: 1px
+    color: rgba(255, 255, 255, 0.9)
+    text-shadow: 0 1px 1px $blackish, 0 1px 1px $blackish
+
+  a:hover
+    color: rgba(255, 255, 255, 1)
+    text-shadow: 0 2px 2px $blackish, 0 2px 2px $blackish
+
+.ribbon.gold u
+  background: $ribbon-gold-light
+
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($ribbon-gold-light), to($ribbon-gold))
+  background-image: -webkit-linear-gradient($ribbon-gold-light, $ribbon-gold)
+  background-image: -moz-linear-gradient($ribbon-gold-light, $ribbon-gold)
+  background-image: -ms-linear-gradient($ribbon-gold-light, $ribbon-gold)
+  background-image: linear-gradient($ribbon-gold-light, $ribbon-gold)
+
+.ribbon u
+  left: 0
+  margin: 0 -16px
+  width: auto
+
+.ribbon u:before,
+.ribbon:after
+  content: ''
+  position: absolute
+  height: 16px
+  width: 100%
+  left: 0
+  bottom: 0
+  -webkit-border-top-left-radius: 50% 16px
+    border-top-left-radius: 50% 16px
+  -webkit-border-top-right-radius: 50% 16px
+    border-top-right-radius: 50% 16px
+  box-shadow: inset 0 2px 3px $blackish
+
+.oldie .ribbon u:before,
+.oldie .ribbon:after
+  content: none
+
+.ribbon u:before
+  background: $ribbon-red-dark
+
+.ribbon.gold u:before
+  background: $ribbon-gold-dark
+
+.ribbon:after
+  background-color: $blackish
+  z-index: 1

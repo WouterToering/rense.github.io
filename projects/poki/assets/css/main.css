@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "proxima_novaregular";
+  src: url("http://static.gamepilot.com/font/proximanova-regular-webfont.eot");
+  src: url("http://static.gamepilot.com/font/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://static.gamepilot.com/font/proximanova-regular-webfont.woff2") format("woff2"), url("http://static.gamepilot.com/font/proximanova-regular-webfont.woff") format("woff"), url("http://static.gamepilot.com/font/proximanova-regular-webfont.ttf") format("truetype"), url("http://static.gamepilot.com/font/proximanova-regular-webfont.svg#proxima_novaregular") format("svg"); }
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "proxima_novaregular", sans-serif;
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #333;
+  margin: 0;
+  padding: 0; }
+
+.swiper-container {
+  padding: 3em; }
+
+.swiper-slide {
+  position: relative;
+  color: #fff;
+  padding: 1em;
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 250px; }
+  .swiper-slide .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 200px;
+    padding: 0 10px;
+    background-color: #111111;
+    z-index: 2;
+    text-align: center; }
+    .swiper-slide .info .score {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      background-color: #111111;
+      color: #aaa; }
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #000; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0; }
+
+.ribbon {
+  position: absolute;
+  width: 100%;
+  top: 145px;
+  left: 0; }
+
+.ribbon:before,
+.ribbon i:before {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  border: 24px solid #a70400; }
+
+.ribbon.gold:before,
+.ribbon.gold i:before {
+  border: 24px solid #966400; }
+
+.ribbon:before,
+.ribbon.gold:before {
+  left: -54px;
+  border-left-color: transparent;
+  -webkit-transform: rotate(-16deg);
+    -webkit-transform--moz-transform: rotate(-16deg);
+      -webkit-transform--moz-transform--ms-transform: rotate(-16deg);
+        -webkit-transform--moz-transform--ms-transform--o-transform: rotate(-16deg);
+          -webkit-transform--moz-transform--ms-transform--o-transform-transform: rotate(-16deg); }
+
+.oldie .ribbon:before {
+  left: -48px; }
+
+.ribbon i:before,
+.ribbon.gold i:before {
+  right: -54px;
+  border-right-color: transparent;
+  -webkit-transform: rotate(16deg);
+    -webkit-transform--moz-transform: rotate(16deg);
+      -webkit-transform--moz-transform--ms-transform: rotate(16deg);
+        -webkit-transform--moz-transform--ms-transform--o-transform: rotate(16deg);
+          -webkit-transform--moz-transform--ms-transform--o-transform-transform: rotate(16deg);
+  z-index: -1; }
+
+.oldie .ribbon i:before {
+  right: -48px; }
+
+.ribbon i:after,
+.ribbon u:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  bottom: -16px;
+  z-index: 0; }
+
+.ribbon i:after {
+  right: -16px;
+  border-color: transparent transparent transparent #a70400;
+  border-width: 0 0 16px 16px; }
+
+.ribbon.gold i:after {
+  border-color: transparent transparent transparent #966400; }
+
+.ribbon u:after {
+  left: 0;
+  border-color: transparent #a70400 transparent transparent;
+  border-width: 0 16px 16px 0; }
+
+.ribbon.gold u:after {
+  border-color: transparent #966400 transparent transparent; }
+
+.ribbon u {
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: #d24b47;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d24b47), to(#a70400));
+  background-image: -webkit-linear-gradient(#d24b47, #a70400);
+  background-image: -moz-linear-gradient(#d24b47, #a70400);
+  background-image: -ms-linear-gradient(#d24b47, #a70400);
+  background-image: linear-gradient(#d24b47, #a70400);
+  -webkit-border-top-left-radius: 50% 16px;
+    -webkit-border-top-left-radius-border-top-left-radius: 50% 16px;
+  -webkit-border-top-right-radius: 50% 16px;
+    -webkit-border-top-right-radius-border-top-right-radius: 50% 16px;
+  text-align: center;
+  text-decoration: none; }
+  .ribbon u a {
+    position: relative;
+    top: -7px;
+    font-weight: 800;
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 1px #111111, 0 1px 1px #111111; }
+  .ribbon u a:hover {
+    color: white;
+    text-shadow: 0 2px 2px #111111, 0 2px 2px #111111; }
+
+.ribbon.gold u {
+  background: #ffc600;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffc600), to(#966400));
+  background-image: -webkit-linear-gradient(#ffc600, #966400);
+  background-image: -moz-linear-gradient(#ffc600, #966400);
+  background-image: -ms-linear-gradient(#ffc600, #966400);
+  background-image: linear-gradient(#ffc600, #966400); }
+
+.ribbon u {
+  left: 0;
+  margin: 0 -16px;
+  width: auto; }
+
+.ribbon u:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-border-top-left-radius: 50% 16px;
+    -webkit-border-top-left-radius-border-top-left-radius: 50% 16px;
+  -webkit-border-top-right-radius: 50% 16px;
+    -webkit-border-top-right-radius-border-top-right-radius: 50% 16px;
+  box-shadow: inset 0 2px 3px #111111; }
+
+.oldie .ribbon u:before,
+.oldie .ribbon:after {
+  content: none; }
+
+.ribbon u:before {
+  background: #5a0000; }
+
+.ribbon.gold u:before {
+  background: #533d00; }
+
+.ribbon:after {
+  background-color: #111111;
+  z-index: 1; }
+
+/*# sourceMappingURL=main.css.map */

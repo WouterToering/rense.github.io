@@ -1,0 +1,64 @@
+@font-face
+  font-family: 'proxima_novaregular'
+  src: url("http://static.gamepilot.com/font/proximanova-regular-webfont.eot")
+  src: url("http://static.gamepilot.com/font/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://static.gamepilot.com/font/proximanova-regular-webfont.woff2") format("woff2"), url("http://static.gamepilot.com/font/proximanova-regular-webfont.woff") format("woff"), url("http://static.gamepilot.com/font/proximanova-regular-webfont.ttf") format("truetype"), url("http://static.gamepilot.com/font/proximanova-regular-webfont.svg#proxima_novaregular") format("svg")
+
+@import "colors"
+
+
+html, body
+  height: 100%
+
+body
+  font-family: 'proxima_novaregular', sans-serif
+  font-size: 1em
+  background-color: rgba(0, 0, 0, 0.3)
+  color: #333
+  margin: 0
+  padding: 0
+
+.swiper-container
+  padding: 3em
+
+.swiper-slide
+  position: relative
+  color: #fff
+  padding: 1em
+  background-position: center
+  background-size: cover
+
+  width: 250px
+  height: 250px
+
+  //border: 1px solid $blackish
+
+  .info
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    top: 200px
+    padding: 0 10px
+    background-color: $blackish
+    z-index: 2
+
+    text-align: center
+
+    .score
+      position: absolute
+      bottom: 5px
+      left: 0
+      right: 0
+      background-color: $blackish
+      color: #aaa
+
+
+.swiper-pagination-bullet-active
+  opacity: 1
+  background: #000
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+  bottom: 0
+
+
+@import "ribbon"
