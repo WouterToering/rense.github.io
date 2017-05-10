@@ -11,15 +11,15 @@
 # (Using that method instead of site.owner, in case your posts get cloned with your repo.)
 
 # Site settings
-title: RENSE VANDERHOEK
+title: RENSE VANDERKOEK
 description: 
 owner:
-  name: Rense VanderHoek
-  email: vanderhoek@gmail.com
-  url: http://rensevanderhoek.com
+  name: Rense VanderKoek
+  email: vanderkoek@gmail.com
+  url: http://rensevanderkoek.com
 first_published: 2016
 baseurl: "" 
-url: "http://rensevanderhoek.com"
+url: "http://rensevanderkoek.com"
 
 # on landing page
 # - set the greeting only if you want to display the first green section
@@ -37,8 +37,8 @@ social:
   twitter: https://twitter.com/rense
   github: https://github.com/rense
   linkedin-square: https://linkedin.com/in/rense
-  facebook-official: https://facebook.com/vanderhoek
-  angellist: https://angel.co/rensevanderhoek
+  facebook-official: https://facebook.com/vanderkoek
+  angellist: https://angel.co/rensevanderkoek
  
 # if you use this repo's `ruby compose.rb` script to initiate new posts, put the
 # command to invoke your editor here. (I didn't spend time dealing with spaces
